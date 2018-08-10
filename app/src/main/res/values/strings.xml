@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wydatex</string>
+    <string name="add_new_expense">Dodaj wydatek</string>
+    <string name="preferences">Ustawienia</string>
+</resources>

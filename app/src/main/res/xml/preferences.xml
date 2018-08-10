@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="pref_save_category"
+        android:summaryOff="Nie będzie zapisywana"
+        android:summaryOn="Będzie zapisywana"
+        android:title="Ostatnia kategoria"
+        android:defaultValue="false"
+        />
+
+    <SwitchPreference
+        android:key="pref_default_values"
+        android:title="Domyślne wartości"
+        android:summary="Domyślne wartości"/>
+    <EditTextPreference
+        android:key="pref_default_name"
+        android:title="Nazwa"
+        android:dialogTitle="Domyślna nazwa"
+        android:positiveButtonText="OK"
+        android:negativeButtonText="Anuluj"
+        android:summary="Domyślna nazwa wydatku"
+        />
+    <EditTextPreference
+        android:key="pref_default_price"
+        android:dialogTitle="Domyślna cena"
+        android:inputType="numberDecimal"
+        android:positiveButtonText="OK"
+        android:negativeButtonText="Anuluj"
+        android:dependency="pref_default_values"
+        android:title="Cena"
+        android:defaultValue="9.99"
+        android:summary="Domyślna cena wydatku"/>
+
+</PreferenceScreen>
